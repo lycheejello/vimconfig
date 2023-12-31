@@ -1,9 +1,9 @@
-
 execute pathogen#infect()
+
 map <C-n> :NERDTreeToggle<CR>
 map _f :%!python3 -m json.tool
 
-"for omnisharp
+"omnisharp
 filetype plugin on
 "Showmatch significantly slows down omnicomplete
 "when the first match contains parentheses.
