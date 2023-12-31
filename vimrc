@@ -1,10 +1,27 @@
+
 execute pathogen#infect()
+syntax on
+filetype plugin indent on
 
-map <C-n> :NERDTreeToggle<CR>
+" Set
+set hlsearch
+set ignorecase
+set noerrorbells
+set expandtab
+set smarttab
+set shiftwidth=4
+set tabstop=4
+set number
+set listchars=eol:$,tab:» ,trail:·,extends:>,precedes:<
+set list
+set viminfo+=n~/.vim/viminfo
+
+" Remaps
+map <C-n> :NERDTree<CR>
 map _f :%!python3 -m json.tool
+inoremap jj <Esc>
 
-"omnisharp
-filetype plugin on
+" Omnisharp
 "Showmatch significantly slows down omnicomplete
 "when the first match contains parentheses.
 set noshowmatch
@@ -57,20 +74,7 @@ augroup omnisharp_commands
 
 augroup END
 
-set hlsearch
-set ignorecase
-set noerrorbells
-syntax enable
-set expandtab
-set smarttab
-set shiftwidth=4
-set tabstop=4
-set number
-set listchars=eol:$,tab:» ,trail:·,extends:>,precedes:<
-set list
-inoremap jj <Esc>
-" hi Comment ctermfg=darkgrey
-
+" Colors
 set background=dark
 let g:solarized_termtrans = 1
 colorscheme solarized
