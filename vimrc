@@ -30,10 +30,6 @@ set noshowmatch
 "You might also want to look at the echodoc plugin
 set splitbelow
 
-" Get Code Issues and syntax errors
-" let g:syntastic_cs_checkers = ['syntax', 'semantic', 'issues']
-" If you are using the omnisharp-roslyn backend, use the following
-let g:syntastic_cs_checkers = ['code_checker']
 augroup omnisharp_commands
     autocmd!
 
@@ -81,14 +77,4 @@ colorscheme solarized
 
 set guifont=Menlo:h16
 
-" Syntastic
-" set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
-let g:syntastic_swift_checkers = ['swiftpm', 'swiftlint']
 
