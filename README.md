@@ -4,3 +4,6 @@
 
 # We use pathogen, update plugins by cloning the repo in bundle
 `https://github.com/tpope/vim-pathogen`
+
+# Emmet
+`https://raw.githubusercontent.com/mattn/emmet-vim/master/TUTORIAL`

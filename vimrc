@@ -17,7 +17,7 @@ set list
 set viminfo+=n~/.vim/viminfo
 
 " Remaps
-map <C-n> :NERDTree<CR>
+map <C-n> :NERDTreeToggle<CR>
 map _f :%!python3 -m json.tool
 inoremap jj <Esc>
 
